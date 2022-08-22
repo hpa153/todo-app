@@ -22,7 +22,7 @@ const Home = () => {
 
   // Move to previous page if item isn't on existing page
   useEffect(() => {
-    if(curPage > Math.ceil(tasks.length / 3)) {
+    if(curPage > Math.ceil(tasks.length / 3) && Math.ceil(tasks.length / 3) !== 0) {
       dispatch(changePage(Math.ceil(tasks.length / 3)));
     }
   }, [tasks, curPage, dispatch]);
