@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100;1,400&display=swap');
+
+$dark: #020038;
+$light: #d5d5d7;
+$orange: #ffc000;
+$transparent: rgba(255, 255, 255, 0.25);
+
+.dark {
+  background-color: $dark;
+  color: $light;
+}
+
+.light {
+  background-color: $light;
+  color: $dark;
+}
+
+.component-container {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid $orange;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.shadow {
+  box-shadow: 3px 3px 5px 3px $transparent;
+}
+
+.component-btn {
+  font-family: 'Kanit';
+  color: $light;
+  padding: 6px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+}

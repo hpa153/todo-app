@@ -1,0 +1,41 @@
+@import '../../constants/mainStyle.scss';
+
+
+span {
+  font-weight: bold;
+}
+
+.task-title-container, .task--btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-title-container {
+  margin-bottom: 0;
+
+  .task--title {
+    margin: 0;
+  }
+
+  .task--edit-btn {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.task--btn-container {
+  width: 100%;
+
+  input[type=checkbox] {
+    transform: scale(1.5);
+  }
+
+  .task--completed-check {
+    accent-color: green;
+  }
+
+  .task--btn-remove {
+    background-color: #C41E3A;
+    border: 1px solid #800000;
+  }
+}

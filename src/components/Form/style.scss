@@ -1,0 +1,47 @@
+@import '../../constants/mainStyle.scss';
+
+h3 {
+  margin-top: 0;
+}
+
+form {
+  box-sizing: border-box;
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  
+    input, textarea, select {
+      padding: 8px;
+      border: 1px solid $orange;
+      border-radius: 5px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .form-input--error {
+      border: 1px solid red !important;
+    }
+  }
+  
+  .form--btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+
+    .form--submit-btn {
+      background-color: #008000;
+      border: 1px solid #355E3B;
+    }
+
+    .form--clear-btn {
+      background-color: #7393B3;
+      border: 1px solid #36454F;
+      margin-right: 10px;
+    }
+  }
+}

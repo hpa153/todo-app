@@ -1,0 +1,44 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+
+  .home-left, .home-right {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .home-left {
+    padding-bottom: 0;
+  }
+
+  .home-right {
+    height: 30vh;
+    padding-top: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .home-right::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .home-container {
+    flex-direction: row;
+    padding: 1rem 2rem;
+
+    .home-left {
+      width: 30%;
+      padding-bottom: 1rem;
+    }
+  
+    .home-right {
+      width: 70%;
+      height: 100%;
+      padding-top: 1rem;
+    }
+  }
+}
